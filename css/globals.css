@@ -12,9 +12,10 @@ html {
 }
 
 body {
+  background-color: #393E46;
   font-size: 1.6rem;
   margin-top: 15rem;
-  background-color: #393E46;
+  
 }
 
 ul {
