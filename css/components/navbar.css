@@ -12,7 +12,7 @@
     color: #00ADB5;
   }
   
-  .navbar .navbar__content {
+   .navbar .navbar__content {
     padding: 1rem 4rem 1rem;
     display: flex;
     justify-content: space-between;
@@ -44,6 +44,87 @@
     display: none;
   }
   
+ /*jQuerry Class*/
+ .select__language.change-br:before {
+  background-image: url(https://img.icons8.com/color/48/brazil.png)}
+
+  .select__language.change-en:before {
+    background-image: url(https://img.icons8.com/color/48/usa.png)
+}
+
+.language {
+  position: relative;
+  width: 120px;
+  margin-left: 40px;
+  font-weight: bold;
+}
+
+.select__language{
+  display: flex;
+  align-items: center;
+  color: #fff;
+  cursor: pointer;
+}
+
+.select__language::before {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-image: url(https://img.icons8.com/color/48/brazil.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+}
+
+.language ul {
+  position: absolute;
+  width: 140px;
+  background-color: #fff;
+  border: 1px solid #f8f8f8;
+  padding-top: 10px;
+  display: none;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+.language ul li {
+  list-style: none;
+}
+
+.language ul li a{
+  display: block;
+  color: #00ADB5;
+  padding-top: 5px 10px;
+}
+
+.language ul li:hover {
+  background-color: #f8f8f8;
+}
+
+.language ul li a::before{
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+a.br::before {
+  background-image: url(https://img.icons8.com/color/48/brazil.png);
+}
+a.en::before {
+  background-image: url(https://img.icons8.com/color/48/usa.png);
+}
+
+.language:hover ul{
+  display: list-item;
+}
+
+
+
   @media only screen and (max-width: 768px) {
     .navbar .navbar__content .navbar__links {
       display: none;

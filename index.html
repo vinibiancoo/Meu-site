@@ -18,12 +18,21 @@
             <img src="assets/VB70crop.png" alt="Vinicius Bianco" />
           </a>
           <ul class="navbar__links">
-            <li><a href="#header">Início</a></li>
-            <li><a href="#about">Sobre</a></li>
-            <li><a href="#skills">Habilidades</a></li>
-            <li><a href="#projects">Projetos</a></li>
-            <li><a href="#footer">Contato</a></li>
+            <li><a href="#header" id="nav-item-1">Início</a></li>
+            <li><a href="#about" id="nav-item-2">Sobre</a></li>
+            <li><a href="#skills" id="nav-item-3">Habilidades</a></li>
+            <li><a href="#projects" id="nav-item-4">Projetos</a></li>
+            <li><a href="#footer" id="nav-item-5">Contato</a></li>
           </ul>
+          <div class="language">
+            <div class="select__language br">
+                pt-BR
+            </div>
+              <ul>
+                <li><a href="#" class="br">Português</a></li>
+                <li><a href="#" class="en">English</a></li>
+              </ul>
+          </div>
           <div class="navbar__mobile">
             <img src="assets/menu.png" alt="menu" class="burguer" />
             <ul class="mobile__links">
@@ -41,8 +50,8 @@
 
       <header id="header" class="max-width">
         <div class="header__left">
-          <h1>Olá, Sou Vinicius Bianco Quality Engineer</h1>
-          <p>
+          <h1 id="header-h1">Olá, Sou Vinicius Bianco Quality Engineer</h1>
+          <p id ="header-p">
             Trabalho como QA automation engineer para aplicativos web e mobile, sendo eles da área de banco e saúde, buscando sempre me aprimorar para alcançar a excelência.
                   Minhas especialidades incluem <b>SQL, Robot Framework, Selenium, Postman, Appium e Jmeter.</b>
           </p>
@@ -58,8 +67,8 @@
 
       <section id="about" class="about max-width">
         <div class="about__left">
-          <h2 class="secondary-title">Além do código: quem sou eu?</h2>
-          <p>
+          <h2 class="secondary-title" id="header-h2">Além do código: quem sou eu?</h2>
+          <p id="about-p" class="header-p">
             Que tal se conectar comigo nas redes sociais abaixo e saber mais sobre
             meu trabalho?
           </p>
@@ -79,12 +88,12 @@
           <h3 class="tertiary-title mb-m">
             Quality Engineer especialista em tecnologia e soluções criativas
           </h3>
-          <p>
+          <p id="about-right-p-1">
             Quality engineer apaixonado por
             tecnologia e soluções criativas. Com mais de 3 anos de experiência em
             testes web e mobile, venho trabalhando com diversas tecnologias e plataformas para criar soluções robustas e escaláveis que atendam às necessidades dos clientes.
           </p>
-          <p>
+          <p id="about-right-p-2">
             Meu objetivo é encontrar e reportar os mais diversos erros  dentro de um projeto a fim de assegurar a qualidade do mesmo,  buscando sempre aprender e evoluir.
           </p>
         </div>
@@ -92,8 +101,8 @@
 
       <section id="skills" class="skills">
         <div class="skills__content max-width">
-          <h2 class="tertiary-title">Minhas ferramentas</h2>
-          <p class="description">
+          <h2 class="tertiary-title" id="my-tools">Minhas ferramentas</h2>
+          <p class="description" id="skills-description">
             Descubra as habilidades e ferramentas que domino e que me permitem
             testar e validar todas as etapas dos projetos.
           </p>
@@ -102,36 +111,36 @@
               <div class="image-container">
                 <img src="assets/icons8-web-32.png" alt="Desenvolvimento Web" />
               </div>
-              <h3>Automação Web</h3>
+              <h3 id="web">Automação Web</h3>
               <p>
-                Experiência em <b>Selenium, NextJS, Web Driver, Cucumber, Jmeter</b>
+                <b>Selenium, NextJS, Web Driver, Cucumber, Jmeter</b>
               </p>
             </li>
             <li class="skills__item">
               <div class="image-container">
                 <img src="assets/icons8-google-mobile-32.png" alt="Web Design" />
               </div>
-              <h3>Automação Mobile</h3>
+              <h3 id="mobile">Automação Mobile</h3>
               <p>
-                Experiência em <b>Robot Framework, Appium</b>
+                <b>Robot Framework, Appium</b>
               </p>
             </li>
             <li class="skills__item">
               <div class="image-container">
                 <img src="assets/icons8-postman-api-32.png" alt="UX/UI Design" />
               </div>
-              <h3>Testes em APIs</h3>
+              <h3 id="api">Testes em APIs</h3>
               <p>
-                Experiência em <b>Postman</b>
+                <b>Postman</b>
               </p>
             </li>
             <li class="skills__item">
               <div class="image-container">
                 <img src="assets/icons8-sql-32.png" alt="Gerenciamentos de versões" />
               </div>
-              <h3>Banco de dados</h3>
+              <h3 id="_bank">Banco de dados</h3>
               <p>
-                Experiência em <b>MySQL, PostgreSQL, Redis</b>
+                <b>MySQL, PostgreSQL, Redis</b>
               </p>
             </li>
           </ul>
@@ -140,7 +149,7 @@
 
       <section id="projects" class="projects max-width">
         <div class="projects__content">
-          <h2 class="secondary-title">Projetos em Destaque</h2>
+          <h2 class="secondary-title" id="project-destaque">Projetos em Destaque</h2>
           <p class="project-p">
             Aqui estão os projetos que fazem parte da minha história como QA
           </p>
@@ -151,14 +160,13 @@
               <img src="assets/FHM.png" alt="fhm" />
             </div>
             <div class="projects__info">
-              <h3 class="tertiary-title">
+              <h3 class="tertiary-title" id="fhm-h3">
                 Full health medical website
               </h3>
-              <p>
+              <p id="fhm-p">
                 O projeto baseou-se na criação e automação de todos os testes dos processos da empresa, em conjunto com  testes exploratórios e manuais sempre que possível.
 Tecnologias: Selenium, SQL, Robot Framework, Postman, Jmeter, Ruby on rails
               </p>
-              <a href="#">Leia mais &rarr;</a>
             </div>
           </li>
           <li class="projects__reversed-list">
@@ -166,14 +174,13 @@ Tecnologias: Selenium, SQL, Robot Framework, Postman, Jmeter, Ruby on rails
               <img src="assets/itau.png" alt="itau" />
             </div>
             <div class="projects__info">
-              <h3 class="tertiary-title">
+              <h3 class="tertiary-title" id="itau-h3">
                 Banco Itaú
               </h3>
-              <p>
+              <p id="itau-p">
                 O projeto baseou-se na automação e criação de testes web e mobile para o aplicativo do banco do itaú, no qual foi realizado testes de tela, UX, Performance e automação de tarefas.
 Tecnologias: Selenium, Appium, SQL, Postman, Jmeter
               </p>
-              <a href="#">Leia mais &rarr;</a>
             </div>
           </li>
         </ul>
@@ -181,8 +188,8 @@ Tecnologias: Selenium, Appium, SQL, Postman, Jmeter
 
       <footer id="footer">
         <div class="footer__content max-width mb-0">
-          <h2 class="tertiary-title mb-s">Vamos conversar?</h2>
-          <p class="mb-m">
+          <h2 class="tertiary-title mb-s" id="lets-talk">Vamos conversar?</h2>
+          <p class="mb-m" id="footer-p">
             Ficarei feliz em saber mais sobre seus projetos e como podemos
             trabalhar juntos para torná-los realidade.
           </p>
@@ -207,6 +214,10 @@ Tecnologias: Selenium, Appium, SQL, Postman, Jmeter
         </div>
       </footer>
 
+      <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"></script>
     <script src="scripts/index.js"></script>
 </body>
 </html>
