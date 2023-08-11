@@ -45,11 +45,12 @@
   }
   
  /*jQuerry Class*/
- .select__language.change-br:before {
-  background-image: url(https://img.icons8.com/color/48/brazil.png)}
+ .select__language.change-br::before {
+  background-image: url(https://img.icons8.com/color/48/brazil.png);
+ }
 
-  .select__language.change-en:before {
-    background-image: url(https://img.icons8.com/color/48/usa.png)
+  .select__language.change-en::before {
+    background-image: url(https://img.icons8.com/color/48/usa.png);
 }
 
 .language {
@@ -120,11 +121,8 @@ a.en::before {
 }
 
 .language:hover ul{
-  display: list-item;
+  display: block;
 }
-
-
-
   @media only screen and (max-width: 768px) {
     .navbar .navbar__content .navbar__links {
       display: none;

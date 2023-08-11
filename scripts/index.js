@@ -1,21 +1,5 @@
-const navbar = document.querySelector('.navbar');
-const mobileNavbar = document.querySelector('.navbar__mobile');
-const button = document.querySelector('.burguer');
-
-button.addEventListener('click', function () {
-  mobileNavbar.classList.toggle('active');
-});
-
-window.addEventListener('scroll', function () {
-  if (this.window.pageYOffset > 0) return navbar.classList.add('active');
-  return navbar.classList.remove('active');
-
-  
-});
-
-
 //pt-br
-$(document).ready(function() {
+$(function() {
   $(".br").click(function() {
     $("#nav-item-1").text("Início");
     $("#nav-item-2").text("Sobre");
@@ -23,6 +7,7 @@ $(document).ready(function() {
     $("#nav-item-4").text("Projetos");
     $("#nav-item-5").text("Contato");
     $(".select__language").text("pt-BR");
+    $(".select__language").removeClass("change-en");
     $(".select__language").addClass("change-br");
     
     //header
@@ -62,7 +47,7 @@ $(document).ready(function() {
 
 
 //en-USA
-$(document).ready(function() {
+$(function() {
   $(".en").click(function() {
     $("#nav-item-1").text("Home");
     $("#nav-item-2").text("About");
@@ -75,7 +60,7 @@ $(document).ready(function() {
     //header
     $("#header-h1").text("Hello, I'm Vinicius Bianco, Quality Engineer.");
     $("#header-p").html("I work as a QA Automation Engineer for web and mobile applications in the banking and healthcare sectors, always striving to improve myself and achieve excellence. My specialties include: SQL, Robot Framework, Selenium, Postman, Appium, and Jmeter.");
-    $(".btn.btn-primary").text("Learn More!");
+    $(".btn.btn-primary").text("More!");
     
     //about
     $("#header-h2").text("Besides the code: who am I?");
@@ -105,4 +90,21 @@ $(document).ready(function() {
     $("#footer-p").text("I'll be glad to learn more about your projects and how we can work together to bring them to life.");
     $(".footer__copyright").text("© 2023 Vinicius Bianco. All rights reserved.");
   });
+});
+
+
+
+const navbar = document.querySelector('.navbar');
+const mobileNavbar = document.querySelector('.navbar__mobile');
+const button = document.querySelector('.burguer');
+
+button.addEventListener('click', function () {
+  mobileNavbar.classList.toggle('active');
+});
+
+window.addEventListener('scroll', function () {
+  if (this.window.pageYOffset > 0) return navbar.classList.add('active');
+  return navbar.classList.remove('active');
+
+  
 });
