@@ -1,5 +1,6 @@
 footer {
     background-color: var(--light-tertiary-color);
+    overflow: hidden;
   }
   
   footer .footer__content {

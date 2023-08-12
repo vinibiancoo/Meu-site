@@ -1,6 +1,7 @@
 .skills {
     background-color: var(--light-tertiary-color);
     scroll-margin-top: 15rem;
+    overflow: hidden;
   }
   
   .skills .skills__content {
